@@ -31,7 +31,7 @@ function AnimatedNumber({ value, suffix = "" }: { value: number; suffix?: string
     return () => observer.disconnect();
   }, [value]);
 
-  return <div ref={ref}>{count.toLocaleString()}{suffix}</div>;
+  return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
 }
 
 export default function Stat() {

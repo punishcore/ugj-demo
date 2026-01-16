@@ -1,5 +1,6 @@
 "use client";
-import { FaUniversity, FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
+import Image from "next/image";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaInstagram, FaYoutube, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -8,8 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <FaUniversity className="text-2xl sm:text-3xl text-blue-400" />
-              <span className="text-lg sm:text-xl font-bold">Tracer Study UGJ</span>
+              <Image src="/logo.png" alt="UGJ" width={120} height={40} className="rounded-lg" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">Sistem pelacakan alumni Universitas Swadaya Gunung Jati untuk memantau perkembangan karir lulusan.</p>
           </div>
@@ -18,8 +18,8 @@ export default function Footer() {
             <h4 className="font-semibold text-base sm:text-lg mb-4">Kontak</h4>
             <div className="space-y-3 text-gray-400 text-sm">
               <p className="flex items-center gap-2"><FaMapMarkerAlt className="text-blue-400 flex-shrink-0" />Jl. Pemuda No. 32, Cirebon</p>
-              <p className="flex items-center gap-2"><FaPhone className="text-blue-400" />(0231) 123456</p>
-              <p className="flex items-center gap-2"><FaEnvelope className="text-blue-400" />tracer@ugj.ac.id</p>
+              <p className="flex items-center gap-2"><FaPhone className="text-blue-400" />(0231) 206558 / 236742</p>
+              <p className="flex items-center gap-2"><FaEnvelope className="text-blue-400" />humas@ugj.ac.id</p>
             </div>
           </div>
           
@@ -36,10 +36,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-base sm:text-lg mb-4">Ikuti Kami</h4>
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors"><FaFacebook /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-colors"><FaInstagram /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition-colors"><FaYoutube /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"><FaTiktok /></a>
+              <a href="https://wa.me/6285220008400" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition-colors"><FaWhatsapp /></a>
+              <a href="https://www.instagram.com/ugj.official/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-colors"><FaInstagram /></a>
+              <a href="https://www.youtube.com/@Ugj.official" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition-colors"><FaYoutube /></a>
+              <a href="https://www.tiktok.com/@ugj.official" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"><FaTiktok /></a>
             </div>
           </div>
         </div>
